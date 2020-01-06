@@ -40,8 +40,8 @@ class GradlePlugin implements org.gradle.api.Plugin<Project> {
             }
         }
 
-        if (version != null && versionCompare(version, "2.2.0") < 0) {
-            throw new ProjectConfigurationException("Plugin requires the 'com.android.tools.build:gradle' version 2.2.0 or above to be configured.", null);
+        if (version != null && versionCompare(version, "3.0.0") < 0) {
+            throw new ProjectConfigurationException("Plugin requires the 'com.android.tools.build:gradle' version 3.0.0 or above to be configured.", null);
         }
 
 //        project.dependencies {
